@@ -12,3 +12,7 @@ ip=$(get_guest_ip)
 _test.get_ip(){
 	echo $ip
 }
+
+if $debug;then
+	_test.get_ip
+fi
